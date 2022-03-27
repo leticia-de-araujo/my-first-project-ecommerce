@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lola Gift Store</title>
+    <link rel="reset" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <img src="https://i.ibb.co/1X6WmBc/L-2.png" alt="logo" id="logo"/>
+      <ul>
+        <li id="allProductsSection" class="currentElement">All products</li>
+        <li id="notebooksSection">Notebooks</li>
+        <li id="pensPencilsSection">Pens & pencils</li>
+        <li id="bottlesSection">Bottles</li>
+      </ul>
+    </header>
+    <div id="mainContainer">
+      <main id="containerShop">
+      </main>
+      <aside>
+        <form id="containerSearch">
+          <input type="text" id="searchBar" onfocus="this.value=''" placeholder="Search for a product"/>
+          <button id="btnSearch">Search</button>
+        </form>
+        <div id="containerCart">
+          <div id="cartHeader">Shopping cart</div>
+          <div id="cartContent">
+            <div class="emptyCart">
+               <p>Empty cart</p>
+              <span>Add items</span>
+            </div>
+          </div>
+          <div id="cartBottom">
+          <div id="totalQuantity">
+            <div>Quantity:</div>
+            <div class="quant">0</div>
+          </div>
+          <div id="totalValue">
+            <div>Total:</div>
+            <div class="value">$0</div>
+          </div>
+          <button>Purchase</button>
+          </div>
+        </div>
+      </aside>
+    </div>
+    </div>
+    <div id="myModal" class="modal">
+      <div class="modalContent">
+        <p>This item is already added to the cart.</p>
+        <span class="close">&times;</span>
+      </div>
+    </div>
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+  </body>
+  
+</html>
